@@ -1,0 +1,8 @@
+services:
+  interviewer:
+    build: .
+    env_file: .env               
+    stdin_open: true            
+    tty: true                    
+    volumes:
+      - ./transcripts:/app/transcripts   # saved interviews persist on local
